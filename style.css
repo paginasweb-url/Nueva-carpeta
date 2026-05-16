@@ -1,0 +1,555 @@
+
+/* ===== PAGINA PRODUCTOS ===== */
+
+.productos{
+    width:100%;
+    padding:50px 20px;
+    min-height:100vh;
+    background:
+linear-gradient(
+rgba(255,255,255,0.88),
+rgba(255,255,255,0.88)
+),
+
+url("img/fondo.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+}
+
+/* TITULO */
+
+.titulo{
+    text-align:center;
+
+    font-size:60px;
+
+    color:#222;
+
+    margin-bottom:15px;
+}
+
+/* SUBTITULO */
+
+.subtitulo{
+    text-align:center;
+
+    font-size:22px;
+
+    color:#666;
+
+    margin-bottom:60px;
+}
+
+/* CONTENEDOR */
+
+.contenedor-libros{
+    width:90%;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:50px;
+
+    max-width:1200px;
+}
+
+/* TARJETAS */
+
+.libro{
+    background:white;
+
+    border-radius:25px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:25px;
+
+    gap:30px;
+}
+
+/* HOVER */
+
+.libro:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* IMAGEN */
+
+.libro img{
+    width:220px;
+
+    height:320px;
+
+    object-fit:cover;
+
+    border-radius:15px;
+}
+
+/* CONTENIDO */
+
+.contenido-libro{
+    flex:1;
+}
+
+/* TITULO LIBRO */
+
+.contenido-libro h2{
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:15px;
+}
+
+/* TEXTO */
+
+.contenido-libro p{
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.6;
+
+    margin-bottom:25px;
+}
+
+/* BOTON */
+
+.contenido-libro button{
+    padding:14px 30px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:linear-gradient(135deg,#00bcd4,#2196f3);
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+/* EFECTO BOTON */
+
+.contenido-libro button:hover{
+    transform:scale(1.05);
+
+    background:linear-gradient(135deg,#2196f3,#00e5ff);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:900px){
+
+    .contenedor-libros{
+        grid-template-columns:1fr;
+    }
+
+    .libro{
+        flex-direction:column;
+
+        text-align:center;
+    }
+
+}
+/* BOTON REGRESAR */
+
+.btn-regresar{
+    display:inline-block;
+
+    margin-bottom:40px;
+    margin-left:40px;
+
+    padding:14px 28px;
+
+    background:#222;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+
+.btn-regresar:hover{
+    background:#00bcd4;
+
+    transform:translateY(-3px);
+}
+
+
+/* ===== PAGINA CONTACTO ===== */
+
+.pagina-contacto{
+    min-height:100vh;
+    padding:50px 20px;
+    background:
+linear-gradient(
+rgba(255,255,255,0.88),
+rgba(255,255,255,0.88)
+),
+
+url("img/fondo.png");
+
+background-size:cover;
+
+background-position:center;
+
+background-repeat:no-repeat;
+
+background-attachment:fixed;
+}
+
+/* TITULO */
+
+.titulo-contacto{
+    text-align:center;
+
+    font-size:55px;
+
+    color:#222;
+
+    margin-bottom:15px;
+}
+
+/* SUBTITULO */
+
+.subtitulo-contacto{
+    text-align:center;
+
+    font-size:22px;
+
+    color:#666;
+
+    margin-bottom:60px;
+}
+
+/* CONTENEDOR */
+
+.redes{
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:60px;
+
+    flex-wrap:wrap;
+}
+
+/* TARJETAS */
+
+.red-social{
+    background:white;
+
+    width:320px;
+
+    padding:40px 30px;
+
+    border-radius:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+/* HOVER */
+
+.red-social:hover{
+    transform:translateY(-10px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* IMAGENES */
+
+.red-social img{
+    width:130px;
+
+    height:130px;
+
+    object-fit:contain;
+
+    margin-bottom:25px;
+}
+
+/* TITULO RED */
+
+.red-social h2{
+    font-size:30px;
+
+    color:#222;
+
+    margin-bottom:15px;
+}
+
+/* TEXTO */
+
+.red-social p{
+    font-size:18px;
+
+    color:#666;
+
+    line-height:1.6;
+}
+
+/* LINKS */
+
+.redes a{
+    text-decoration:none;
+}
+
+/* BOTON REGRESAR */
+
+.btn-regresar{
+    display:inline-block;
+
+    margin-bottom:40px;
+
+    padding:14px 28px;
+
+    background:#222;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+/* HOVER BOTON */
+
+.btn-regresar:hover{
+    background:#13203f;
+
+    transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .titulo-contacto{
+        font-size:40px;
+    }
+
+    .subtitulo-contacto{
+        font-size:18px;
+    }
+
+}
+
+
+/* ===== SOBRE NOSOTROS ===== */
+
+.pagina-sobre{
+    min-height:100vh;
+
+    padding:50px 20px;
+
+    background:
+    linear-gradient(
+    rgba(255,255,255,0.90),
+    rgba(255,255,255,0.90)
+    ),
+
+    url("img/fondo.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-attachment:fixed;
+}
+
+/* CONTENEDOR */
+
+.contenedor-sobre{
+    width:85%;
+
+    max-width:1100px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:60px;
+
+    border-radius:30px;
+
+    box-shadow:0 15px 35px rgba(0,0,0,0.15);
+}
+
+/* TITULO */
+
+.contenedor-sobre h1{
+    text-align:center;
+
+    font-size:55px;
+
+    color:#222;
+
+    margin-bottom:25px;
+}
+
+/* FRASE */
+
+.frase{
+    text-align:center;
+
+    font-size:28px;
+
+    color:#00bcd4;
+
+    font-style:italic;
+
+    margin-bottom:50px;
+
+    font-weight:bold;
+}
+
+/* TEXTO */
+
+.texto-sobre p{
+    font-size:22px;
+
+    line-height:1.9;
+
+    color:#444;
+
+    margin-bottom:30px;
+
+    text-align:justify;
+}
+
+/* LISTA */
+
+.texto-sobre ul{
+    margin-left:30px;
+
+    margin-bottom:40px;
+}
+
+.texto-sobre li{
+    font-size:22px;
+
+    margin-bottom:20px;
+
+    color:#333;
+
+    line-height:1.7;
+}
+
+/* MENSAJE FINAL */
+
+.mensaje-final{
+    text-align:center;
+
+    font-size:30px;
+
+    font-weight:bold;
+
+    color:#ff5722;
+
+    margin-top:50px;
+}
+
+/* BOTON */
+
+.btn-regresar{
+    display:inline-block;
+
+    margin-bottom:40px;
+
+    padding:14px 28px;
+
+    background:#222;
+
+    color:white;
+
+    text-decoration:none;
+
+    border-radius:40px;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    transition:0.3s;
+}
+
+/* HOVER */
+
+.btn-regresar:hover{
+    background:#00bcd4;
+
+    transform:translateY(-3px);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+    .contenedor-sobre{
+        padding:35px;
+    }
+
+    .contenedor-sobre h1{
+        font-size:40px;
+    }
+
+    .frase{
+        font-size:22px;
+    }
+
+    .texto-sobre p,
+    .texto-sobre li{
+        font-size:18px;
+    }
+
+    .mensaje-final{
+        font-size:24px;
+    }
+
+}
